@@ -1,24 +1,10 @@
-public class Boots implements Shoe {
-    private String color;
-    private String size;
-
+public class Boots extends Shoe {
     Boots(String c, String s){
-        color = c;
-        size = s;
+        super(c,s);
     }
 
     @Override
     public String getName() {
-        return "Ботинки";
-    }
-
-    @Override
-    public String getColor() {
-        return color;
-    }
-
-    @Override
-    public String getSize() {
-        return size;
+        return "Boots";
     }
 }

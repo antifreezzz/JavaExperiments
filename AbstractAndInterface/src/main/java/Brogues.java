@@ -1,25 +1,13 @@
-public class Brogues implements Shoe {
-    private String color;
-    private String size;
+public class Brogues extends Shoe {
 
-    Brogues(String c, String s){
-        color = c;
-        size = s;
+
+    Brogues(String c, String s) {
+        super(c, s);
     }
-
 
     @Override
     public String getName() {
-        return "Броги";
+        return "Brogues";
     }
 
-    @Override
-    public String getColor() {
-        return color;
-    }
-
-    @Override
-    public String getSize() {
-        return size;
-    }
 }
